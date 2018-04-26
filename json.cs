@@ -18,7 +18,7 @@ namespace TrackingInfo
         public Results(string[] tracklist)
         {      
             var jsonParams = GetJsonString(tracklist);
-            byte[] buffer = Encoding.UTF8.GetBytes(jsonParams);
+            var buffer = Encoding.UTF8.GetBytes(jsonParams);
             var byteContent = new ByteArrayContent(buffer);
             var response = client.PostAsync("https://t.17track.net/restapi/track", byteContent).Result;
             var  jsonTemp = JsonConvert.DeserializeObject<JsonResponse>(response.Content.ReadAsStringAsync().Result.ToString()).dat;
