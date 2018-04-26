@@ -2,6 +2,9 @@
 
 How to use:
 
+Use nuget to install:
+Newtonsoft.Json
+
 1)send up to 40 tracking number as an array of string.
 
 2)You will get back a List with each element containing information about each tracking number
