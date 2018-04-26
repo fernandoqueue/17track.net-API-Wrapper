@@ -9,7 +9,7 @@ How to use:
 3).info element will be an array where each element is an event during the shipping process.
 
             var test = new string[] { "EI024511114US", "EL738178395US" };
-            var updates = new Results(test).results();
+            var updates = new Results(test).results;
             foreach (var update in updates)
                 foreach (var tmp in update.info)
                 {
