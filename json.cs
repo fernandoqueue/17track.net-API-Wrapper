@@ -13,7 +13,7 @@ namespace TrackingInfo
         static HttpClient client = new HttpClient();
         List<TrackingInformation> _results;
 
-        public List<TrackingInformation> results() => _results;
+         public List<TrackingInformation> results { get { return _results; } }
         
         public Results(string[] tracklist)
         {      
